@@ -4,9 +4,18 @@
 //offsetTop - A Number, representing the top position of the element, in pixels
 
 // ********** set date ************
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
 
 // ********** close links ************
+const navToggle = document.querySelector('.nav-toggle');
+const linksContainer = document.querySelector('.links-container');
+const links = document.querySelector('.links');
 
+navToggle.addEventListener('click', function () {
+  const containerHeight = linksContainer.getBoundingClientRect().height;
+  const linksHeight = links.getBoundingClientRect().height;
+});
 // ********** fixed navbar ************
 
 // ********** smooth scroll ************
